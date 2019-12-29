@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("./img/background.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+/* Ebenenunabhängig */
+
+#start {
+     position:absolute;
+     left:0;
+     right:0;
+     top:0;
+     bottom:0;
+     margin:auto;
+     width: 300px;
+     height: 250px;
+     background-color: transparent;
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+     background-position: center center;
+}
+#gameOver {
+     position:absolute;
+     left:0;
+     right:0;
+     top:0;
+     bottom:0;
+     margin:auto;
+     width: 300px;
+     height: 250px;
+     background-color: transparent;
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+     background-position: center center;
+     background-image: url("./img/gameOver.gif");
+     display: none;
+}
+#nextLevel {
+     position:absolute;
+     left:0;
+     right:0;
+     top:0;
+     bottom:0;
+     margin:auto;
+     width: 300px;
+     height: 250px;
+     background-color: transparent;
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+     background-position: center center;
+     background-image: url("./img/nextLevel.gif");
+     display: none;
+}
+#highScore {
+     position: absolute;
+     right: 0%;
+     height: 10%;
+     width: 50%;
+     color: white;
+     font-size: 200%;
+     font-style: italic;
+     text-align: center;
+     background-repeat: no-repeat;
+     background-color:transparent;
+     background-image: url("./img/highScore.png");
+     background-size: contain;
+     background-position: center;
+     display: none;
+}
+#reachedScore {
+     position: absolute;
+     height:10%;
+     width: 50%;
+     color: red;
+     font-size: 200%;
+     font-style: italic;
+     text-align: center;
+     background-repeat: no-repeat;
+     background-color:transparent;
+     background-image: url("./img/reachedScore.png");
+     background-size: contain;
+     background-position: center;
+     display: none;
+}
+#maxReached {
+     position: absolute;
+     bottom:0%;
+     height:10%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-color:transparent;
+     background-image: url("./img/maxReachedFalse.png");
+     background-size: contain;
+     background-position: center;
+     display: none;
+}
+
+
+
+
+
+/*Ebene 1*/
+
+#bridgeChild {
+     z-index: 1;
+     position: fixed;
+     background-color: transparent;
+     background-image: url("./img/bridge.png");
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-position: center center;
+     visibility: visible;
+}
+#finishline {
+     z-index: 1;
+     position: fixed;
+     background-image: url("./img/finishline.png");
+     background-repeat: no-repeat;
+     background-color: transparent;
+     background-size: 100% 100%;
+     background-position: center center;
+}
+
+
+
+
+/*Ebene 2*/
+
+#stoneChild {
+     z-index: 2;
+     position: fixed;
+     background-image: url("./img/stone.png");
+     background-repeat: no-repeat;
+     background-color: transparent;
+     background-size: 100% 100%;
+     background-position: center center;
+}
+#holeChild {
+     z-index: 2;
+     position: fixed;
+     background-image: url("./img/hole.png");
+     background-repeat: no-repeat;
+     background-color: transparent;
+     background-size: 100% 100%;
+     background-position: center center;
+}
+#evilCrabChild {
+     z-index: 2;
+     position: fixed;
+     background-image: url("./img/evilcrab.gif");
+     background-repeat: no-repeat;
+     background-color: transparent;
+     background-size: 100% 100%;
+     background-position: center center;
+}
+#woodChild {
+     z-index: 2;
+     position: fixed;
+     background-image: url("./img/wood.png");
+     background-repeat: no-repeat;
+     background-color: transparent;
+     background-size: 100% 100%;
+     background-position: center center;
+}
+#tntboxChild {
+     z-index: 2;
+     position: fixed;
+     background-image: url("./img/tnt.png");
+     background-repeat: no-repeat;
+     background-color: transparent;
+     background-size: 100% 100%;
+     background-position: center center;
+}
+#inverterChild {
+     z-index: 2;
+     position: fixed;
+     background-image: url("./img/inverter.gif");
+     background-repeat: no-repeat;
+     background-color: transparent;
+     background-size: 100% 100%;
+     background-position: center center;
+}
+
+
+
+
+
+/*Ebene 3*/
+
+#crab {
+     z-index: 3;
+     position: fixed;
+     background-color: transparent;
+     background-image: url("./img/crab.gif");
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+     background-position: center center;
+}
+
+
+
+
+/*Ebene 4*/
+
+#birdChild {
+     z-index: 4;
+     position: fixed;
+     background-image: url("./img/stone.png");
+     background-repeat: no-repeat;
+     background-color: transparent;
+     background-size: 100% 100%;
+     background-position: center center;
+}
+
+
+
+
+/*Ebene 5*/
+
+#wind {
+     z-index: 5;
+     position:  absolute;
+     height: 100%;
+     width: 100%;
+     background-color: transparent;
+     opacity: 0.4;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     display: none;
+}
+#windWarning {
+     z-index: 5;
+     position: fixed;
+     height: 0;
+     width: 15%;
+     padding-bottom:15%;
+     background-image: url("./img/windWarning.gif");
+     background-repeat: no-repeat;
+     background-color: transparent;
+     background-size: 100% 100%;
+     background-position: center center;
+     display: none;
+}
+
+
+
+
+/*Ebene 6*/
+
+#darkLevel {
+     z-index: 6;
+     position:  absolute;
+     height: 100%;
+     width: 100%;
+     opacity: .70;
+     background-color: black;
+     display: none;
+}
+
+
+
+
+/*Ebene 7*/
+/*Hierhin wird die Krabbe im DarkLevel verschoben*/
+
+
+
+
+/*Ebene 8*/
+
+#countdown {
+     z-index: 8;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     color: red;
+     font-style: italic;
+     text-align: center;
+     background-color: white;
+     opacity: .7;
+     display: none;
+}
+#boom {
+     z-index: 8;
+     position:  absolute;
+     height: 100%;
+     width: 100%;
+     background-image: url("./img/boom.png");
+     background-color: white;
+     background-size: 50%;
+     background-repeat: no-repeat;
+     background-position: center;
+     display: none;
+}
+
+
+
+
+/*Ebene 9*/
+
+#viewWarning {
+     z-index: 9;
+     position:  absolute;
+     height: 100%;
+     width: 100%;
+     background-image: url("./img/viewWarning.png");
+     background-color: #0EE5F9;
+     background-size: 50%;
+     background-repeat: no-repeat;
+     background-position: center;
+     display: none;
+}

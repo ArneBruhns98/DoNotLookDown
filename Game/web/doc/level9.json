@@ -1,0 +1,13 @@
+{
+  "Next Level": true,
+  "Dark Level": false,
+  "Bridge (Length)": 2,
+  "EvilCrab (Number)": 3,
+  "Hole (Number)": 3,
+  "Stone (Number)": 4,
+  "Wood (Number)": 1,
+  "TNTBox (Number)": 3,
+  "Inverter (Number)": 2,
+  "Bird (Number)": 2,
+  "Wind (Max Strength, Growth Factor, Time Between Changes, Direction East)": [1.5, 0.25, 3, false]
+}
